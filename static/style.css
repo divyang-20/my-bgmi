@@ -1,0 +1,257 @@
+@import url('https://fonts.googleapis.com/css?family=Yeon+Sung|ZCOOL+QingKe+HuangYou&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+html{
+    scroll-behavior: smooth;
+}
+
+.logo{
+    display: flex;
+    color: white;
+    align-items: center;
+    margin: 0px 14px;
+    font-size: 20px;
+    margin-right: 38px;
+}
+.logo img{
+    height: 42px;
+    filter: invert(1);
+    border: 2px solid white;
+    border-radius: 30px;
+}
+
+.navbar{
+    padding: 10px 8px;
+    font-family: 'Yeon Sung';
+    position: sticky;
+    top: 0;
+}
+.navbar.background{
+    background: rgba(0,0,0,0.7) url('/static/img/bg.jpg');
+    background-size: cover;
+    background-blend-mode: darken;
+}
+.navbar ul{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+.navbar li{
+    list-style: none;
+}
+.navbar li a{
+    font-size: 28px;
+    color: white;
+    text-decoration: none;
+    padding: 13px 20px;;
+}
+.navbar li a:hover{
+    color:gray;
+}
+
+#introSection{
+    color: white;
+    padding-bottom: 60px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    font-family: 'ZCOOL QingKe HuangYou';
+    align-items: center;
+    font-size: 55px;
+    background: center/cover no-repeat url('/static/img/bg.webp');
+    height: 570px;
+}
+#introSection div.small{
+    font-size: 45px;
+    padding: 5px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+#missionSection{
+    height: 270px;
+    width: 70%;
+    margin: auto;
+}
+#missionSection h2{
+    font-size: 36px;
+    text-align: center;
+    padding: 12px;
+    font-family: 'Yeon Sung';
+}
+
+.card{
+    display: inline-block;
+    border: 2px solid black;
+    border-radius: 10px;
+    width: 30%;
+    margin: 21px 13px;
+    height: 190px;
+}
+.card h3{
+    text-align: center;
+    margin: 10px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+.card-box{
+    display: flex;
+    align-items: center;
+}
+.card-img{
+    height: 130px;
+    margin: 5px 5px;
+}
+.card-img img{
+    height: inherit;
+}
+.card-content{
+    padding: 0 5px;
+    text-align: center;
+}
+.card-content p{
+    font-size: 17px;
+}
+
+#sponsorsSection{
+    height: 350px;
+    background-color: #fbd6d6c7;
+}
+
+#sponsorsSection h2{
+    font-size: 36px;
+    text-align: center;
+    padding-top:  12px;
+    font-family: 'Yeon Sung';
+    margin-top: 72px;
+}
+
+#sponsors{
+    height: 190px;
+    max-width: 1000px;
+    margin: 27px auto;
+    display: flex;
+    justify-content: center;
+}
+
+.spImage{
+    height: 80%;
+    margin: 20px;
+}
+
+#footer{
+    display: flex;
+    color: white;
+    height: 60px;
+    background-color: black;
+    justify-content: center;
+    align-items: center;
+    font-size: 16px;
+    font-family: 'yeon sung';
+}
+
+.burger{
+    display: none;
+    position: absolute;
+    cursor: pointer;
+    right: 4%;
+    top: 13px;
+}
+
+.line{
+    width: 25px;
+    background-color: white;
+    height: 3px;
+    margin: 4px 2px;
+}
+
+
+@media only screen and (max-width: 1150px){
+    #missionSection{
+        height: 270px;
+        display: inline;
+    }
+}
+
+@media only screen and (max-width: 890px){
+    #introSection{
+        font-size: 35px;
+    }
+    #introSection div.small{
+        font-size: 25px;
+    }
+    #sponsorsSection{
+        height: 280px;
+    }
+    #sponsors{
+        height: 190px;
+        max-width: 1000px;
+        margin: 26px 20px;
+        display: flex;
+        justify-content: center;
+    }
+    .spImage{
+        height: 54%;
+        margin: 20px;
+    }
+}
+
+@media only screen and (max-width: 790px){
+    #missionSection{
+        height: 750px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+    .card{
+        display: inline-block;
+        border: 2px solid black;
+        border-radius: 10px;
+        width: 60%;
+        margin: 19px auto;
+        height: 190px;
+    }
+}
+
+@media only screen and (max-width: 620px){
+    .navbar{
+        flex-direction: column;
+        transition: all 0.7s ease-out;
+        height: 350px;
+    }
+    .navbar ul{
+        flex-direction: column;
+    }
+    .navbar li{
+        margin: 15px;
+    }
+    .burger{
+        display: block;
+    }
+    .h-nav-resp{
+        height: 50px;
+    }
+    .v-class-resp{
+        opacity: 0;
+    }
+}
+
+@media only screen and (max-width: 520px){
+    #introSection{
+        height: 350px;
+        font-size: 22px;
+    }
+    #introSection div.small{
+        font-size: 12px;
+    }
+    .card{
+        width: 95%;
+    }
+    .spImage{
+        margin: 10px;
+    }
+    #footer{
+        font-size: 13px;
+    }
+}

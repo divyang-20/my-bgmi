@@ -1,0 +1,81 @@
+h1{
+    text-align: center;
+    margin: 12px 0;
+
+}
+
+.container{
+    margin: 43px 0;
+}
+
+.container h1{
+    font-family: 'ZCOOL QingKe HuangYou';
+    font-size: 34px;
+}
+
+.myForm{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+}
+
+.myInput{
+    font-size: 16px;
+    width: 40%;
+    padding: 9px;
+    margin: 8px;
+    border: 2px solid black;
+    border-radius: 12px;
+}
+
+.btn{
+    padding: 8px 16px;
+    font-size: 18px;
+    border: 2px solid black;
+    border-radius: 10px;
+    color: white;
+    background:red;
+    cursor: pointer;
+    outline: none;
+    margin: 24px;
+}
+
+.contactSec{
+    display: flex;
+    background-color: yellow;
+    flex-direction: column;
+    height: 80px;
+    justify-content: center;
+    text-align: center;
+}
+
+.ab{
+    font-weight: bold;
+    font-size: 22px;
+}
+
+.images{
+    padding: 5px 0;
+}
+
+.images img{
+    height: 35px;
+    width: 35px;
+    margin: 0 15px;
+    border: 2px solid black;
+    border-radius: 12px;
+}
+
+@media only screen and (max-width: 850px){
+    .myInput{
+        width: 57%;
+    }
+}
+
+@media only screen and (max-width: 490px){
+    .myInput{
+        width: 67%;
+    }
+}

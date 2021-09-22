@@ -1,0 +1,33 @@
+extends base.pug
+
+block scripts
+
+block style
+    style
+      include ../static/style.css
+      include ../static/styleContact.css
+
+block content 
+    div.container
+        h1  Contact Us
+        form(action="/contact", method="post", class="myForm")
+            input(type="text", Class="myInput", name="name", placeholder="Enter your Name")  
+            input(type="text", Class="myInput", name="gamename", placeholder="Enter your Ingame Name") 
+            input(type="phone", Class="myInput", name="phone", placeholder="Enter your WhatsApp Number")  
+            input(type="phone", Class="myInput", name="bgmiid", placeholder="Enter your BGMI Id")   
+            input(type="text", Class="myInput", name="desc", placeholder="Enter your Concern")   
+            button(class="btn")
+                |  Submit 
+
+    section.contactSec
+        div.ab
+            |My Handles
+        div.images
+            a(href="https://www.facebook.com/divyang.maurya.3/")
+                img(src="/static/img/fb.jpg" alt="fb logo")
+            a(href="https://www.instagram.com/yash_dmeniax/")
+                img(src="/static/img/insta.jpg" alt="intagram logo")
+            a(href="https://twitter.com/divyang_maurya")
+                img(src="/static/img/twi.jpg" alt="twitter logo")
+            a(href="https://www.linkedin.com/in/divyang-maurya-188893202")
+                img(src="/static/img/linked.jpg" alt="linkedin logo")

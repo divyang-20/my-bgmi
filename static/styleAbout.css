@@ -1,0 +1,87 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital@1&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.sec{
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    max-width: 80%;
+    margin: auto;
+    font-family: 'Roboto', sans-serif;
+    padding: 10px;
+}
+
+.text-big{
+    font-size: 32px;
+}
+
+.text-small{
+    font-size: 16px;
+}
+
+.sec-left{
+    flex-direction: row-reverse;
+}
+
+.paras{
+    padding:0 70px;
+}
+
+.sectionTag{
+    padding: 16px 0;
+}
+
+.sectionSubTag{
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.thumbnail img{
+    width: 150px;
+    border: 2px solid black;
+    border-radius: 26px;
+    margin-top: 19px;
+}
+
+.contactSec{
+    display: flex;
+    background-color: red;
+    flex-direction: column;
+    height: 80px;
+    justify-content: center;
+    text-align: center;
+}
+
+.ab{
+    font-weight: bold;
+    font-size: 22px;
+}
+
+.images{
+    padding: 5px 0;
+}
+
+.images img{
+    height: 35px;
+    width: 35px;
+    margin: 0 15px;
+    border: 2px solid black;
+    border-radius: 12px;
+}
+
+@media only screen and (max-width: 1000px){
+    .sec{
+        flex-direction: column-reverse;
+    }
+    .text-small{
+        text-align: center;
+    }
+    .text-big{
+        text-align: center;
+    }
+    .paras{
+        padding: 0px;
+    }
+}
