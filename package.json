@@ -1,18 +1,34 @@
 {
-  "name": "dance-website",
+  "name": "bgmi-website",
   "version": "1.0.0",
-  "description": "this is a website for a popular dance academy ",
+  "description": "this is my bgmi website",
   "main": "app.js",
-  "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
-    "start": "node app.js"
-  },
-  "author": "Divyang BHai",
-  "license": "ISC",
   "dependencies": {
     "body-parser": "^1.19.0",
+    "browserify": "^17.0.0",
     "express": "^4.17.1",
     "mongoose": "^6.0.6",
-    "pug": "^3.0.2"
-  }
+    "pug": "^3.0.2",
+    "slugify": "^1.6.0"
+  },
+  "devDependencies": {
+    "nodemon": "^2.0.12"
+  },
+  "scripts": {
+    "start": "nodemon app.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/divyang-20/my-bgmi.git"
+  },
+  "keywords": [
+    "Awesome"
+  ],
+  "author": "Divyang Maurya",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/divyang-20/my-bgmi/issues"
+  },
+  "homepage": "https://github.com/divyang-20/my-bgmi#readme"
 }
