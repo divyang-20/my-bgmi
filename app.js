@@ -22,7 +22,7 @@ const contactSchema = new mongoose.Schema({
 const Contact = mongoose.model('Contact', contactSchema);
 
 //server port
-const port=8000;
+const port=process.env.PORT || 8000;
 
 //EXPRESS SPECIFIC STUFFS
 app.use('/static',express.static('static'))//for serving static files
