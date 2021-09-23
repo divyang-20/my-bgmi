@@ -4,9 +4,11 @@ const path=require('path');
 const app=express();
 const bodyparser=require('body-parser');
 const mongoose = require('mongoose');
+
+const uri=process.env.MONGODB_URI || 'mongodb://localhost:27017/contactbgmi'
 main().catch(err => console.log(err));
 async function main() {
-  await mongoose.connect('mongodb://localhost:27017/contactbgmi');
+  await mongoose.connect(uri);
 }
 
 //defining schema
