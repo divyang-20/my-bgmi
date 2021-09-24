@@ -60,7 +60,7 @@ html{
     justify-content: center;
     font-family: 'ZCOOL QingKe HuangYou';
     align-items: center;
-    font-size: 55px;
+    font-size: 60px;
     background: center/cover no-repeat url('/static/img/bg.webp');
     height: 570px;
 }
@@ -176,10 +176,10 @@ html{
 
 @media only screen and (max-width: 890px){
     #introSection{
-        font-size: 35px;
+        font-size: 40px;
     }
     #introSection div.small{
-        font-size: 25px;
+        font-size: 30px;
     }
     #sponsorsSection{
         height: 280px;
@@ -240,10 +240,10 @@ html{
 @media only screen and (max-width: 520px){
     #introSection{
         height: 350px;
-        font-size: 22px;
+        font-size: 28px;
     }
     #introSection div.small{
-        font-size: 12px;
+        font-size: 16px;
     }
     .card{
         width: 95%;

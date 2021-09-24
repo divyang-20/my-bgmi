@@ -8,7 +8,7 @@ const mongoose = require('mongoose');
 const uri=process.env.MONGODB_URI || 'mongodb://localhost:27017/contactbgmi'
 main().catch(err => console.log(err));
 async function main() {
-  await mongoose.connect(uri);
+  await mongoose.connect(uri,{useNewUrlParser:true,useUnifiedTopology:true});
 }
 
 //defining schema
@@ -37,22 +37,19 @@ app.set('views',path.join(__dirname,'views'))//set the views directory
 //ENDPOINTS
 app.get('/',(req,res)=>{
     const params={}
-    res.status(200).render('home.pug',params);
+    res.render('home.pug');
 })
 
 app.get('/about',(req,res)=>{
-    const params={}
-    res.status(200).render('about.pug',params);
+    res.render('about.pug');
 })
 
 app.get('/services',(req,res)=>{
-    const params={}
-    res.status(200).render('services.pug',params);
+    res.render('services.pug');
 })
 
 app.get('/contact',(req,res)=>{
-    const params={}
-    res.status(200).render('contact.pug',params);
+    res.render('contact.pug');
 })
 
 app.post('/contact',(req,res)=>{
